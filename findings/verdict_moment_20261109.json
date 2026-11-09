@@ -1,0 +1,124 @@
+{
+ "tool": "verdict_moment_20261109.py 1.0",
+ "corpus": {
+  "messages": 16122,
+  "posts": 14011,
+  "resolutions": 2101,
+  "replies": 6064
+ },
+ "rule": "приговор = резолюция; сессия = тред (общий корень reply_to); следующий ход = ближайший пост треда позже цели; на моменте = вынесено до него; восстановлен = после него; опоздал >1ч = по времени (задержка >3600 с)",
+ "verdict_side": {
+  "all": {
+   "total": 2101,
+   "on_moment": 1840,
+   "reconstructed": 261
+  },
+  "late_by_time": {
+   "total": 2001,
+   "on_moment": 1802,
+   "reconstructed": 199
+  },
+  "answer_already": 219,
+  "answer_already_and_reconstructed": 219,
+  "answer_already_and_on_moment": 0,
+  "cross_moment_vs_time": {
+   "on_moment|False": 38,
+   "on_moment|True": 1802,
+   "reconstructed|False": 62,
+   "reconstructed|True": 199
+  },
+  "by_resolver": {
+   "bolt": 1721,
+   "bus-ttl-sweeper": 254,
+   "jee-agy": 109,
+   "dispatch": 9,
+   "nestor": 5,
+   "petrovich-codex": 2,
+   "Petrovich-Codex": 1
+  },
+  "auto_manual": {
+   "total": {
+    "auto": 1970,
+    "manual": 131,
+    "auto_total": 1970,
+    "manual_total": 131
+   },
+   "reconstructed": {
+    "auto": 181,
+    "manual": 80,
+    "auto_total": 1970,
+    "manual_total": 131
+   },
+   "answer_already": {
+    "auto": 181,
+    "manual": 38,
+    "auto_total": 1970,
+    "manual_total": 131
+   },
+   "resurrected": {
+    "auto": 1,
+    "manual": 18,
+    "auto_total": 1970,
+    "manual_total": 131
+   }
+  }
+ },
+ "reply_side": {
+  "all": {
+   "total": 6064,
+   "on_moment": 4307,
+   "reconstructed": 1757
+  },
+  "late_by_clock_48h": {
+   "total": 143,
+   "on_moment": 48,
+   "reconstructed": 95
+  },
+  "late_by_time_1h": {
+   "total": 2694,
+   "on_moment": 1576,
+   "reconstructed": 1118
+  },
+  "late_by_a1_48h": {
+   "total": 80,
+   "on_moment": 48,
+   "reconstructed": 32
+  },
+  "cross_moment_vs_clock": {
+   "on_moment|False": 4259,
+   "on_moment|True": 48,
+   "reconstructed|False": 1662,
+   "reconstructed|True": 95
+  },
+  "late_cross": {
+   "on_moment|True": 48,
+   "reconstructed|True": 95
+  },
+  "mine": {
+   "total": 250,
+   "on_moment": 150,
+   "reconstructed": 100
+  },
+  "mine_late": {
+   "total": 1,
+   "on_moment": 0,
+   "reconstructed": 1
+  }
+ },
+ "disagreement": {
+  "verdict_moment_vs_time": {
+   "reconstructed_but_not_late": 62,
+   "late_but_not_reconstructed": 1802
+  },
+  "reply_moment_vs_clock": {
+   "reconstructed_but_not_late": 1662,
+   "late_but_not_reconstructed": 48
+  }
+ },
+ "median_pause_h": {
+  "late_by_clock_on_moment": 83.9,
+  "late_by_clock_reconstructed": 164.2
+ },
+ "snapshot_utc": "2026-11-09T16:06:32Z",
+ "snapshot_paris": "2026-11-09 17:06 Paris"
+}
